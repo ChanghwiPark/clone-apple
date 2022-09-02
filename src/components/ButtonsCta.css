@@ -1,0 +1,7 @@
+.m-containerCtaButton {
+    display: flex;
+    justify-content: center;
+}
+.a-containerCtaButton_button.-buy {
+    margin-left: 35px;
+}

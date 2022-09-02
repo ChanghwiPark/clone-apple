@@ -1,0 +1,59 @@
+.o-sectionCompare{
+    padding: 110px 0 115px;
+    text-align: center;
+}
+.m-containerSectionCompare {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.m-containerSectionCompareItem{
+    width: 940px;
+    margin: 82.6px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 34px;
+}
+.m-sectionCompareItem__containerMain{
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    grid-row-gap: 40px;
+    border-bottom: 1px solid #d2d2d7;
+}
+.m-sectionCompareItem__containerMainBlock{
+    padding-bottom: 35px;
+    border-bottom: 1px solid #d2d2d7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.a-containerMainBlock__wrapperImgPhone{
+    margin-bottom: 22px;
+}
+.a-containerMainBlock__wrapperImgColors{
+    margin-bottom: 35px;
+}
+.a-containerMainBlock__text{
+    height: 50px;
+}
+.a-buttonBuy.-sectionCompare{
+    margin-top: 16px;
+}
+.a-buttonMore.-sectionCompare{
+    padding-top: 11px;
+}
+
+.m-sectionCompareItem__containerMainBlock .a-containerCtaButton_button.-learnMore{
+    padding-top: 11px;
+}
+
+.o-sectionCompare .m-containerCtaButton {
+    /* border: solid 1px red; */
+    margin-top: .65em;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.381;
+}
+
+

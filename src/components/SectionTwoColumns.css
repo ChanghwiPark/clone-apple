@@ -1,0 +1,55 @@
+.m-main__sectionTwoColumns {
+    display: grid;
+    height: 1764px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.m-sectionTwoColumns__container {
+    /* border: 1px solid cyan; */
+}
+.a-linkPictureTwoColumns.-macBookAir {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/macbook-air/promo_macbookair__fywl7i82fueu_large_2x.png")
+}
+.a-linkPictureTwoColumns.-macBookPro13 {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/macbook-pro-13/promo_mbp13__buwssod6c8vm_large_2x.jpg")
+}
+.a-linkPictureTwoColumns.-appleWatch7 {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/watch-series-7/promo_watch_lte__djeaso7ukrsm_large_2x.jpg")
+}
+.a-linkPictureTwoColumns.-ipadAir {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/ipad-air/promo_ipadair_avail__ferd4bfpcdm6_large_2x.jpg")
+}
+.a-linkPictureTwoColumns.-appleCard {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/apple-card/tile__cauwwcyyn9hy_large_2x.jpg")
+}
+.a-linkPictureTwoColumns.-airPods {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/airpods-spatial/promo_airpods_spatial__cak1sq3kb1w2_large_2x.jpg")
+}
+.a-titleTwoColumns {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-top: 53px;
+}
+.a-subtitleTwoColumns {
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+}
+.m-containerTextTwoColumns.-macBookPro13, .m-containerTextTwoColumns.-ipadAir {
+    color: #f5f5f7;
+}
+.m-containerTextTwoColumns.-airPods {
+    color: #f5f5f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 56px;
+}
+.m-main__sectionTwoColumns .m-containerCtaButton{
+    /* border: solid 2px orange; */
+    margin-top: .7em;
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+}

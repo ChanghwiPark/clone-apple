@@ -1,0 +1,18 @@
+
+.m-main__RibbonDeal {
+    height: 52px;
+}
+.m-RibbonDeal__container {
+    max-width: 980px;
+    height: 100%;
+    margin: auto;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+}
+.a-textRibbonDeal {
+    font-size: 14px;
+    line-height: 1.4285914286;
+    font-weight: 400;
+    letter-spacing: -0.016em;
+}

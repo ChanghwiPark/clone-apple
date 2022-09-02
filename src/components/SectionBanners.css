@@ -1,0 +1,36 @@
+.m-main__sectionBanners {
+    height: 561.13167px;
+}
+.m-containerCarousel {
+    width: 995px;
+    height: 523.13167px;
+    margin: auto;
+    background-image: url("https://www.apple.com/v/home/aq/images/tv-plus-gallery/fnb__brvfy48gzsz6_large_2x.jpg");
+}
+.m-containerCarouselControl {
+    /* border: solid 1px blueviolet; */
+    height: 38px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-containerCarouselControl_button.-tabList {
+    /* border: solid 1px violet; */
+    width: 264px;
+    height: 25px;
+}
+.m-ulCarouselControl {
+    display: flex;
+    justify-content: space-around;
+}
+.m-containerCarouselControl_button.-pause{
+    /* border: solid 1px violet; */
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    right: 30px;
+    background-image: url("../assets/icons/pause.png");
+    background-size: contain;
+}

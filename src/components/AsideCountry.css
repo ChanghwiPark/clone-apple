@@ -1,0 +1,39 @@
+
+.o-asideCountry{
+    /* border: solid 1px blue; */
+    z-index: 99;
+    background: #424245;
+    width: 100%;
+}
+.o-asideCountry.-fixed{
+    position: fixed;
+}
+.o-asideCountry__containerMain {
+    /* border: solid 1px red; */
+    max-width: 1024px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.92);
+}
+.a-textCountry {
+    /* border: solid 1px green; */
+    height: 34px;
+    max-width: 430px;
+    margin-right: 19.594px;
+    font-size: 12px;
+    line-height: 1.41667;
+}
+.o-asideCountry__containerDropdown {
+    /* border: solid 1px yellowgreen; */
+    height: 36px;
+    display: flex;
+    display: none; /*나중에 추가 작업*/
+}
+.m-dropdownCountry__iconCheck img{
+    width: 18px;
+    height: 24px;
+}

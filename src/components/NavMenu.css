@@ -1,0 +1,30 @@
+
+.o-navMenu {
+    background: rgba(0, 0, 0, .8);
+    backdrop-filter: saturate(180%) blur(20px);
+    width: 100%;
+    z-index: 99;
+}
+.o-navMenu.-fixed{
+    margin-top: 70px;
+    position: fixed;
+}
+.m-navMenu__container {
+    /* border: solid 1px yellow; */
+    max-width: 1024px;
+    margin: auto;
+}
+.m-navMenu__ul{
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.o-navMenu__list a{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 3.66667;
+    font-weight: 400;
+    color: #f5f5f7;
+}

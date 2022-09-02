@@ -1,0 +1,29 @@
+.m-sectionLastFooter {
+    margin: 34px 0px 21px;
+}
+.m-sectionLastFooter__text.-moreShops {
+    margin-bottom: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d2d2d7;
+}
+.m-sectionLastFooter__container.-legal {
+    display: flex;
+    position: relative;
+}
+.a-textLastFooter.-copyright, .m-containerLegalLinks {
+    margin-right: 30px;
+}
+.a-linksLegal {
+    border-right: 1px solid #d2d2d7;
+    margin-right: 7px;
+    padding-right: 10px;
+    color: #424245;;
+}
+.a-linksLegal:last-child {
+    border: none;
+}
+.a-textLastFooter.-localCountry{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}

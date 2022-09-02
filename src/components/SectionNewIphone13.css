@@ -1,0 +1,30 @@
+.o-containerSectionFullIphone13 {
+    padding: 116px 0 60px;
+}
+.m-sectionWhyIphone13Item.-upgrade, .m-sectionWhyIphone13Item.-switch{
+    background-color: #f5f5f7;
+    width: 980px;
+    margin: auto;
+    padding: 58px 0 52px;
+}
+.m-sectionWhyIphone13Item.-upgrade {
+    margin-bottom: 20px;
+}
+.m-containerWhyIphone13Item.-upgrade, .m-containerWhyIphone13Item.-switch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.a-sectionWhyIphone13Item__icon.-upgrade{
+    background-image: url("https://www.apple.com/v/iphone-13/h/images/key-features/upgrade/icon_upgrade__bxb5mtphmyb6_large.jpg");
+    width: 58px;
+    height: 83px;
+}
+.a-sectionWhyIphone13Item__icon.-switch{
+    background-image: url("https://www.apple.com/v/iphone-13/h/images/key-features/switch/icon_iOS__euawd9gvyh26_large.jpg");
+    width: 104px;
+    height: 82px;
+}
