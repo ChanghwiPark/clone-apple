@@ -1,3 +1,4 @@
+import ButtonsCta from "./ButtonsCta";
 
 function SectionOneColumnItem({ className, href, title, subTitle, cta }) {
     return (
@@ -6,7 +7,9 @@ function SectionOneColumnItem({ className, href, title, subTitle, cta }) {
             <div className={"m-containerTextOneColumn " + className}>
                 <h2 className={"a-titleOneColumn " + className}>{title}</h2>
                 <h3 className={"a-subtitleOneColumn " + className}>{subTitle}</h3>
-                {cta}
+                <ButtonsCta 
+                    className={className} arrayButtons={cta}
+                />
             </div>
         </div>
     )

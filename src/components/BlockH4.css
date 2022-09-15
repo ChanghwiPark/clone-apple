@@ -1,0 +1,21 @@
+
+.m-containerBlockH4{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.a-blockH4__title{
+    margin: 22px 0 18px;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+}
+.a-blockH4__description{
+    margin-top: .8em;
+    font-size: 19px;
+    line-height: 1.4211026316;
+    font-weight: 400;
+}
+.a-blockH4__icon{
+    background-size: 100% 100%;
+}

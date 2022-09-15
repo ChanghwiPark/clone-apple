@@ -1,0 +1,19 @@
+.m-navBreadcrumbs {
+    padding: 17px 0px;
+}
+.m-navBreadcrumbs a{
+    margin-right: 7px;
+    color: #424245;
+}
+.m-navBreadcrumbs a:not(:first-child)::before{
+    display: inline-block;
+    width: 8px;
+    height: 18px;
+    content: '';
+    background-image: url("https://web.archive.org/web/20220805072921im_/https://www.apple.com/ac/globalfooter/7/en_US/assets/ac-footer/breadcrumbs/separator/icon_large.svg");
+    vertical-align: middle;
+    margin-right: 11px;
+}
+.a-linkAppleLogo{
+    font-size: 12px;
+}

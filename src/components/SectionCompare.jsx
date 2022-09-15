@@ -1,22 +1,43 @@
+import React, { useState, useEffect } from "react"
 import ButtonsCta from "./ButtonsCta";
 import "./SectionCompare.css"
 import SectionCompareItem from "./SectionCompareItem";
 
-function SectionCompare() {
+import { sectionCompareDummy } from "./sectionCompareDummy.js"
+
+export default function SectionCompare() {
+    const [sectionCompareArray, setSectionCompareArray] = useState([])
+
+    useEffect(() => {
+        setSectionCompareArray(sectionCompareDummy)
+    }, [])
+
     return(
         <section className="o-sectionCompare">
             <div className="m-containerMainSectionCompare">
                 <h3 className="a-sectionTitle -compare">Which iPhone is right for you?</h3>
                 <div className="m-containerSectionCompareItem">
-                    <SectionCompareItem/>
-                    <SectionCompareItem/>
-                    <SectionCompareItem/>
-                    <SectionCompareItem/>
+                    {
+                        sectionCompareArray && sectionCompareArray.map((item) => (
+                            <SectionCompareItem 
+                                imgPhone={item.imgPhone}
+                                imgColor={item.imgColor}
+                                imgTitle={item.imgTitle}
+                                text={item.text}
+                                subText={item.subText}
+                                arraySectionCompareItems={item.arraySectionCompareItems}
+                            />
+                        ))
+                    }
                 </div>
-                <ButtonsCta className="-sectionCompare" text01="Compare all iPhone models >" text02="Shop iPhone >"/>
+                <ButtonsCta
+                    className="-sectionCompare"
+                    arrayButtons={[
+                        { className: '-compareAll', content: 'Compare all iPhone models >' },
+                        { className: '-shop', content: 'Shop iPhone >' }
+                    ]}
+                />
             </div>
         </section>
     );
 }
-
-export default SectionCompare;

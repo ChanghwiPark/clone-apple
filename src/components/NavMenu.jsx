@@ -1,33 +1,72 @@
+import React, { useState, useEffect } from "react";
 import "./NavMenu.css"
 import NavMenuItem from "./NavMenuItem";
-import applelogo from "../assets/icons/applelogo.svg";
-import search from "../assets/icons/search.svg";
-import bag from "../assets/icons/bag.svg";
 
-function NavMenu(props) {
-    return(
-        <nav class={"o-navMenu " + props.position}>
-        <div class="m-navMenu__container">
-          <ul class="m-navMenu__ul">
-            <NavMenuItem navMenuArray={[
-              {className: "-logoApple", href:"/", content: <img src={applelogo} alt="apple logo" />},
-              {className: "-store", href: "/us/shop/goto/store", content: "Store"},
-              {className: "-mac", href: "/mac/", content: "Mac"},
-              {className: "-ipad", href: "/ipad/", content: "iPad"},
-              {className: "-iphone", href: "/iphone/", content: "iPhone"},
-              {className: "-watch", href: "/watch/", content: "Watch"},
-              {className: "-airpods", href: "/airpods/", content: "AirPods"},
-              {className: "-tvNHome", href: "/tv-home/", content: "TV & Home"},
-              {className: "-onlyOnApple", href: "/services/", content: "Only on Apple"},
-              {className: "-accessories", href: "/us/shop/goto/buy_accessories", content: "Accessories"},
-              {className: "-support", href: "https://support.apple.com", content:"Support"},
-              {className: "-iconSearch", href: "/us/search", content: <img src={search} alt="search icon"/>},
-              {className: "-iconStore", href: "/us/shop/goto/bag", content: <img src={bag} alt="bag icon"/>}
-            ]}/>
-          </ul>
-        </div>
-      </nav>
-    )
+import { navMenuDummy } from './navMenuDummy.js'
+
+export default function NavMenu(props) {
+    const [navMenuArray, setNavMenuArray] = useState([])
+    const [searchBar, setSearchBar] = useState(false)
+    const [searchValue, setSearchValue] = useState('')
+
+    useEffect(() => {
+      setNavMenuArray(navMenuDummy)
+    }, [])
+
+    const showSearchBar = () => {
+      console.log('set to true')
+      setSearchBar(true)
+    }
+    const handleSearch = (e) => {
+      setSearchValue(e.target.value)
+      console.log(searchValue)
+    }
+    const search = () => {
+      alert('search "' + searchValue + '"')
+    }
+    const cancel = () => {
+      setSearchValue('')
+      setSearchBar(false)
+    }
+
+
+  return (
+    <nav class={"o-navMenu " + props.position}>
+      <div class="m-navMenu__container">
+        {
+          searchBar ?
+            <div className="m-searchBar">
+              <button 
+                className="a-buttonSearchIcon -searchBar" 
+                onClick={search}
+              />
+              <input 
+                className='a-inputSearchBar' 
+                type="text" 
+                placeholder="Search apple.com"
+                value={searchValue}
+                onChange={handleSearch}
+              />
+              <button
+                className="a-buttonCancelIcon -searchBar" 
+                onClick={cancel}
+              >􀆄</button>
+            </div> :
+            <ul class="m-navMenu__ul">
+              {
+                navMenuArray ? navMenuArray.map((item) => (
+                  <NavMenuItem
+                    className={item.className}
+                    href={item.href}
+                    content={item.content}
+                    func={showSearchBar}
+                  />
+                )) : ''
+              }
+            </ul>
+        }
+
+      </div>
+    </nav>
+  )
 }
-
-export default NavMenu;

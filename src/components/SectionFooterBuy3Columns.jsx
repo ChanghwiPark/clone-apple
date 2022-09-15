@@ -1,25 +1,36 @@
+import React, { useState, useEffect } from "react";
+import "./SectionFooterBuy3Columns.css"
 
-function SectionFooterBuy3Columns() {
+import { sectionFooterBuy3ColumnsDummy } from './sectionFooterBuy3ColumnsDummy.js'
+import BlockH4 from "./BlockH4";
+
+export default function SectionFooterBuy3Columns() {
+    const [sectionFooterBuy3ColumnsArray, setSectionFooterBuy3ColumnsArray] = useState([])
+
+    useEffect(() => {
+        setSectionFooterBuy3ColumnsArray(sectionFooterBuy3ColumnsDummy)
+    }, [])
+
     return(
-        <section>
-
-Free next-day delivery
-
-On any in-stock iPhone ordered by 5:00 p.m. Or pick up available items at an Apple Store.
-Learn more
-Pay monthly at 0% APR
-
-You can pay over time when you choose to check out with Apple Card Monthly Installments.†
-Learn more
-Get help buying
-
-Have a question? Call a Specialist or chat online.
-
-Call 1-800-MY-APPLE.
-Contact us
+        <section className="o-sectionFooterBuy3Columns">
+            {
+                sectionFooterBuy3ColumnsArray && sectionFooterBuy3ColumnsArray.map((item) => {
+                    return (
+                        <section className="m-sectionFooterBuy3ColumnsItem">
+                                <a className="m-sectionFooterBuy3ColumnsItem__linkContainer" href="">
+                                    <BlockH4
+                                        className={'-buy3Columns ' + item.className}
+                                        icon={item.icon}
+                                        title={item.title}
+                                        description={item.description}
+                                        cta={item.ctaArray}
+                                    />
+                                </a>
+                        </section>
+                    )
+                })
+            }
 
         </section>
     );
 }
-
-export default SectionFooterBuy3Columns;

@@ -28,3 +28,39 @@
     font-weight: 400;
     color: #f5f5f7;
 }
+
+.m-searchBar{
+    width: 682.667px;
+    margin: auto;
+}
+.a-buttonSearchIcon{
+    background-image: url("https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__cbllq1gkias2_large.svg");
+    background-position: 8px 0;
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 44px;
+}
+.a-buttonSearchIcon.-searchBar{
+    position: absolute;
+    background-position: 12.5px -44px;
+    width: 40px;
+    opacity: .8;
+}
+.a-inputSearchBar {
+    padding: 0 38px 0 40px;
+    width: 604.667px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: -.021em;
+}
+.a-buttonCancelIcon.-searchBar {
+    position: absolute;
+    width: 37px;
+    height: 44px;
+    color: #86868b;
+    opacity: .8;
+}

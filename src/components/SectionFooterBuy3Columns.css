@@ -1,0 +1,41 @@
+
+.o-sectionFooterBuy3Columns {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 56px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.m-sectionFooterBuy3ColumnsItem {
+    flex: 1 25%;
+}
+.m-sectionFooterBuy3ColumnsItem__linkContainer {
+    margin: 0 auto;
+    padding-top: 56px;
+    display: block;
+    width: 216px;
+    color: #1d1d1f;;
+}
+.m-containerBlockH4.-buy3Columns {
+    width: inherit;
+}
+.a-blockH4__icon.-buy3Columns img{
+    width: 56px;
+    height: 56px;
+}
+.a-blockH4__title.-buy3Columns{
+    margin-top: .525em;
+    font-size: 19px;
+    line-height: 1.21053;
+    font-weight: 600;
+    letter-spacing: .012em;
+}
+.a-blockH4__description.-buy3Columns{
+    display: block;
+    margin-top: 0.4em;
+    font-size: 14px;
+}
+.m-containerCtaButton.-blockH4.-buy3Columns{
+    margin-top: 0.8em;
+}

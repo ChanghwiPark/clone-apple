@@ -1,13 +1,28 @@
+import React, { useState, useEffect } from "react";
 import "./SectionNewIphone13.css";
-import SectionWhyIphone13Item from "./SectionWhyIphone13Item";
+import BlockH4 from "./BlockH4";
+
+import { sectionNewIphone13Dummy } from './sectionNewIphone13Dummy.js'
 
 function SectionNewIphone13() {
+    const [sectionWhyIphone13Array, setSectionWhyIphone13Array] = useState([])
+
+    useEffect(() =>{
+        setSectionWhyIphone13Array(sectionNewIphone13Dummy)
+    }, [])
+
     return(
         <section className="o-containerSectionFullIphone13">
-
-            <SectionWhyIphone13Item className="-upgrade" title=" Upgrading from a previous iPhone?" description="Simply put your old iPhone next to your new one, and with a few taps, you can transfer your data automatically. If you need it, you can even get temporary iCloud storage for free to hold everything during the transfer." />
-            <SectionWhyIphone13Item className="-switch" title=" Switching from an Android phone?" description="When you buy a new iPhone, there’s a walk‑through to get you started, and the Move to iOS app makes it easy to transfer your photos, contacts, and more." more="Learn more >"/>
-
+            {
+                sectionWhyIphone13Array && sectionWhyIphone13Array.map((item) => (
+                    <BlockH4 
+                        className={"-newIphone13Item " + item.className}
+                        title={item.title}
+                        description={item.description}
+                        cta= {item.cta ? item.cta : []}
+                    />
+                ))
+            }
         </section>
     );
 }

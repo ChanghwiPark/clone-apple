@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react"
 import "./Home.css"
 import NavMenu from "../components/NavMenu.jsx";
 import AsideCountry from "../components/AsideCountry.jsx"
@@ -9,7 +10,15 @@ import SectionFooterNotes from "../components/SectionFooterNotes"
 import NavSiteMap from "../components/NavSiteMap"
 import SectionLastFooter from "../components/SectionLastFooter"
 
-function Home() {
+import { sectionFooterNotesDummy_Home } from '../components/sectionFooterNotesDummy.js'
+
+export default function Home() {
+  const [footerNotesArray, setFooterNotesArray] = useState([])
+
+  useEffect(() => {
+    setFooterNotesArray(sectionFooterNotesDummy_Home)
+  }, [])
+
   return (
     <>
       <AsideCountry position="-fixed"/>
@@ -25,13 +34,11 @@ function Home() {
 
       <footer class="o-footer">
         <div class="m-containerFooter">
-            <SectionFooterNotes/>
+            <SectionFooterNotes footerNotesArray={footerNotesArray} />
             <NavSiteMap/>
-            <SectionLastFooter/>
+            <SectionLastFooter />
         </div>
       </footer>
     </>
   );
 }
-
-export default Home;

@@ -36,20 +36,24 @@
 }
 .a-containerMainBlock__text{
     height: 50px;
+    margin: 7px 0 16px;
 }
-.a-buttonBuy.-sectionCompare{
+.a-buttonBuy.-sectionCompareItem{
     margin-top: 16px;
+    font-size: 12px;
 }
-.a-buttonMore.-sectionCompare{
+.a-containerCtaButton__button.-sectionCompareItem.-learnMore{
     padding-top: 11px;
+    font-size: 14px;
 }
 
-.m-sectionCompareItem__containerMainBlock .a-containerCtaButton_button.-learnMore{
-    padding-top: 11px;
+.m-sectionCompareItemBlock.-display h5{
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 600;
 }
 
-.o-sectionCompare .m-containerCtaButton {
-    /* border: solid 1px red; */
+.m-containerCtaButton.-sectionCompare {
     margin-top: .65em;
     font-size: 21px;
     font-weight: 400;

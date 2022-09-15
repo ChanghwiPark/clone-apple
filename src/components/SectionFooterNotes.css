@@ -5,3 +5,10 @@
 .m-sectionFooterNotes ul li{
     padding-bottom: 0.8em;
 }
+.m-sectionFooterNotes ol{
+    padding: 0 17px;
+    list-style: decimal;
+}
+.m-sectionFooterNotes ol li:last-child{
+    padding-bottom: 0;
+}

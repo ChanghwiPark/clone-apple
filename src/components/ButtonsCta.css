@@ -2,6 +2,6 @@
     display: flex;
     justify-content: center;
 }
-.a-containerCtaButton_button.-buy {
+.a-containerCtaButton__button:not(:first-child) {
     margin-left: 35px;
 }

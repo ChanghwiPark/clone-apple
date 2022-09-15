@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react"
 import "./Iphone13.css"
 import AsideCountry from "../components/AsideCountry"
 import NavIphone13 from "../components/NavIphone13";
@@ -15,33 +16,44 @@ import NavBreadcrumbs from "../components/NavBreadcrumbs";
 import NavSiteMap from "../components/NavSiteMap";
 import SectionLastFooter from "../components/SectionLastFooter";
 
+import { sectionFooterNotesDummy_Iphone13 } from '../components/sectionFooterNotesDummy.js'
+
+
 function Iphone13() {
-    return (<>
-        <AsideCountry />
-        <NavMenu />
+    const [footerNotesArray, setFooterNotesArray] = useState([])
 
-        <NavIphone13 />
+    useEffect(() => {
+        setFooterNotesArray(sectionFooterNotesDummy_Iphone13)
+    }, [])
 
-        <main class="o-main -Iphone13">
-            <RibbonDeal />
-            <SectionHero />
-            <SectionGridFeatures />
-            <SectionWhyIphone13 />
-            <SectionNewIphone13 />
-            <SectionCompare />
-            <SectionRetail />
-        </main>
+    return (
+        <>
+            <AsideCountry />
+            <NavMenu />
 
-        <footer class="o-footer">
-            <div class="m-containerFooter">
-                <SectionFooterBuy3Columns />
-                <SectionFooterNotes content="* Price includes a $30 AT&T, T-Mobile, Sprint, or Verizon discount. Requires activation with carrier."/>
-                <NavBreadcrumbs/>
-                <NavSiteMap/>
-                <SectionLastFooter/>
-            </div>
-        </footer>
-    </>)
+            <NavIphone13 />
+
+            <main className="o-main -Iphone13">
+                <RibbonDeal />
+                <SectionHero />
+                <SectionGridFeatures />
+                <SectionWhyIphone13 />
+                <SectionNewIphone13 />
+                <SectionCompare />
+                <SectionRetail />
+            </main>
+
+            <footer className="o-footer -Iphone13">
+                <div className="m-containerFooter -Iphone13">
+                    <SectionFooterBuy3Columns />
+                    <SectionFooterNotes footerNotesArray={footerNotesArray} />
+                    <NavBreadcrumbs />
+                    <NavSiteMap />
+                    <SectionLastFooter />
+                </div>
+            </footer>
+        </>
+    )
 }
 
 export default Iphone13;

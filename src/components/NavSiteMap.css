@@ -3,6 +3,9 @@
     padding-top: 20px;
     display: flex;
 }
+.m-containerFooter.-Iphone13 .m-navSiteMap {
+    padding-top: 0px;
+}
 .m-columnSiteMap {
     flex: 1;
 }

@@ -1,5 +1,5 @@
 
-function SectionCompareItemBlock({ className, icon, text, subText }) {
+export default function BlockP({ className, icon, text, subText }) {
     return (
         <div className={"m-sectionCompareItemBlock " + className}>
             {icon}
@@ -8,5 +8,3 @@ function SectionCompareItemBlock({ className, icon, text, subText }) {
         </div>
     )
 }
-
-export default SectionCompareItemBlock;

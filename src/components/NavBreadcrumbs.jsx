@@ -1,17 +1,12 @@
+import './NavBreadcrumbs.css'
 
-
-function NavBreadcrumbs() {
+export default function NavBreadcrumbs() {
     return(
-        <nav>
-
-
-    iPhone
-    iPhone 13
-    Key Features
-
-
+        <nav className="m-navBreadcrumbs">
+            <a className="a-linkAppleLogo" href="https://www.apple.com/"></a>
+            <a href="">iPhone</a>
+            <a href="">iPhone 13</a>
+            <a href="">Key Features</a>
         </nav>
     );
 }
-
-export default NavBreadcrumbs;

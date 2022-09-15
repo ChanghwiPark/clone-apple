@@ -1,13 +1,12 @@
-function NavMenuItem({ navMenuArray }) {
+
+export default function NavMenuItem({ className, href, content, func:showSearchBar }) {
+
     return (
-        navMenuArray.map(menuItem => {
-            return (
-                <li className={"o-navMenu__list " + menuItem.className}>
-                    <a href={menuItem.href}>{menuItem.content}</a>
-                </li>
-            )
-        })
+        <li className={"o-navMenu__list " + className}>
+            <a 
+                href={href}
+                onClick={showSearchBar}
+            >{content}</a>
+        </li>
     )
 }
-
-export default NavMenuItem;

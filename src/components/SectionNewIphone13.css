@@ -1,16 +1,16 @@
 .o-containerSectionFullIphone13 {
     padding: 116px 0 60px;
 }
-.m-sectionWhyIphone13Item.-upgrade, .m-sectionWhyIphone13Item.-switch{
+.m-blockH4.-newIphone13Item.-upgrade, .m-blockH4.-newIphone13Item.-switch{
     background-color: #f5f5f7;
     width: 980px;
     margin: auto;
     padding: 58px 0 52px;
 }
-.m-sectionWhyIphone13Item.-upgrade {
+.m-blockH4.-newIphone13Item.-upgrade {
     margin-bottom: 20px;
 }
-.m-containerWhyIphone13Item.-upgrade, .m-containerWhyIphone13Item.-switch{
+.m-containerBlockH4.-newIphone13Item.-upgrade, .m-containerBlockH4.-newIphone13Item.-switch{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,13 +18,20 @@
     text-align: center;
 }
 
-.a-sectionWhyIphone13Item__icon.-upgrade{
+.a-blockH4__icon.-newIphone13Item.-upgrade{
     background-image: url("https://www.apple.com/v/iphone-13/h/images/key-features/upgrade/icon_upgrade__bxb5mtphmyb6_large.jpg");
     width: 58px;
     height: 83px;
 }
-.a-sectionWhyIphone13Item__icon.-switch{
+.a-blockH4__icon.-newIphone13Item.-switch{
     background-image: url("https://www.apple.com/v/iphone-13/h/images/key-features/switch/icon_iOS__euawd9gvyh26_large.jpg");
     width: 104px;
     height: 82px;
+}
+
+.a-containerCtaButton__button.-newIphone13Item{
+    margin-top: .8em;
+    font-size: 19px;
+    line-height: 1.4211026316;
+    font-weight: 400;
 }

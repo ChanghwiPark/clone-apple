@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./SectionWhyIphone13.css"
-import SectionWhyIphone13Item from "./SectionWhyIphone13Item.jsx"
+import BlockH4 from "./BlockH4.jsx"
 
 import { sectionWhyIphone13Dummy } from "./sectionWhyIphone13Dummy";
 
@@ -18,7 +18,12 @@ function SectionWhyIphone13() {
                 {
                     whyIphone13Array ? whyIphone13Array.map((item) => {
                         return (
-                            <SectionWhyIphone13Item className={item.className} title={item.title} description={item.description} more={item.more} />
+                            <BlockH4 
+                                className={"-whyIphone13Item " + item.className} 
+                                title={item.title} 
+                                description={item.description} 
+                                cta= {item.cta ? item.cta : []}
+                            />
                         )
                     }) : ''
                 }
