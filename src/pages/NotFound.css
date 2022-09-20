@@ -1,0 +1,18 @@
+.o-main.-notFound {
+    margin: 92px auto 140px;
+    width: 980px;
+    text-align: center;
+}
+.a-titleNotFound {
+    margin: 0px auto 54px;
+    width: 502px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.08365;
+}
+.a-inputSearchBar.-notFound {
+    margin-bottom: 14px;
+    color: #333;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+}

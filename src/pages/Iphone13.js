@@ -47,7 +47,9 @@ function Iphone13() {
                 <div className="m-containerFooter -Iphone13">
                     <SectionFooterBuy3Columns />
                     <SectionFooterNotes footerNotesArray={footerNotesArray} />
-                    <NavBreadcrumbs />
+                    <NavBreadcrumbs 
+                        locationArray={['iPhone', 'iPhone 13', 'Key Features']}
+                    />
                     <NavSiteMap />
                     <SectionLastFooter />
                 </div>

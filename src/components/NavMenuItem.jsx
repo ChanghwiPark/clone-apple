@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom'
 
-export default function NavMenuItem({ className, href, content, func:showSearchBar }) {
+export default function NavMenuItem({ className, href='', content, func:showSearchBar }) {
 
     return (
         <li className={"o-navMenu__list " + className}>
-            <a 
-                href={href}
+            <Link 
+                to={href}
                 onClick={showSearchBar}
-            >{content}</a>
+            >{content}</Link>
         </li>
     )
 }

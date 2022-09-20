@@ -1,9 +1,9 @@
 
 export const sectionFooterBuy3ColumnsDummy = [
     {
-        href: "https://web.archive.org/web/20220805071214im_/https://www.apple.com/ac/globalfooter/7/en_US/assets/ac-buystrip/shipping/icon_large.svg",
+        href: "https://web.archive.org/web/20220808111428/https://www.apple.com/us/shop/goto/shipping_and_returns",
         className: '-delivery',
-        icon: <img src="https://web.archive.org/web/20220805072947im_/https://www.apple.com/ac/globalfooter/7/en_US/assetså/ac-buystrip/shipping/icon_large.svg" alt="" />,
+        icon: <img src="https://web.archive.org/web/20220805072947im_/https://www.apple.com/ac/globalfooter/7/en_US/assets/ac-buystrip/shipping/icon_large.svg" alt="" />,
         title: 'Free next-day delivery',
         description: 'On any in-stock iPhone ordered by 5:00 p.m. Or pick up available items at an Apple Store.',
         ctaArray: [

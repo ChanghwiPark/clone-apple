@@ -20,7 +20,7 @@ export const navMenuDummy = [
         content: "iPad" 
     },
     { className: "-iphone", 
-        href: "/iphone/", 
+        href: "/iphone13/", 
         content: "iPhone" 
     },
     { className: "-watch", 
