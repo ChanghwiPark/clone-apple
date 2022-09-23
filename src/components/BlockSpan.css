@@ -1,0 +1,18 @@
+
+.m-blockSpan {
+    padding-left: 14px;
+    display: flex;
+    align-items: center;
+}
+.a-blockSpan__icon img{
+    height: 24px;
+    width: auto;
+}
+.a-blockSpanText {
+    width: 140px;
+    margin-left: 12px;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+}

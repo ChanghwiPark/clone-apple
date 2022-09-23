@@ -5,6 +5,7 @@
 }
 h1, h2, h3, h3, h4, h5, h6 {
     color: #111;
+    font-weight: 600;
 }
 a {
 	text-decoration: none;
@@ -25,4 +26,7 @@ a:hover {
     background-position: 12.5px -44px;
     width: 40px;
     opacity: .8;
+}
+strong {
+    font-weight: 600;
 }

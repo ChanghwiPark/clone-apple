@@ -5,7 +5,11 @@ import SectionCompareItem from "./SectionCompareItem";
 
 import { sectionCompareDummy } from "./sectionCompareDummy.js"
 
-export default function SectionCompare() {
+export default function SectionCompare({ ctaButtons=[
+    { className: '-compareAll', content: 'Compare all iPhone models >' },
+    { className: '-shop', content: 'Shop iPhone >' }
+]
+}) {
     const [sectionCompareArray, setSectionCompareArray] = useState([])
 
     useEffect(() => {
@@ -32,10 +36,7 @@ export default function SectionCompare() {
                 </div>
                 <ButtonsCta
                     className="-sectionCompare"
-                    arrayButtons={[
-                        { className: '-compareAll', content: 'Compare all iPhone models >' },
-                        { className: '-shop', content: 'Shop iPhone >' }
-                    ]}
+                    arrayButtons={ctaButtons}
                 />
             </div>
         </section>

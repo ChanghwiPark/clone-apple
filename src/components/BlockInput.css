@@ -1,0 +1,33 @@
+
+.m-blockInput {
+    display: flex;
+    margin-top: 0.82353rem;
+    padding: 0 7px;
+}
+.m-blockInput input {
+    display: none;
+}
+.m-blockInput__label {
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+.m-blockInput__span.-left ,.m-blockInput__span.-right {
+    display: flex;
+    flex-direction: column;
+}
+.m-blockInput__span.-right {
+    text-align: end;
+}
+.m-blockInput__span {
+    font-size: 12px;
+    line-height: 1.33337;
+}
+.m-blockInput__span.-title {
+    font-weight: 600;
+    font-size: 17px;
+}
+    

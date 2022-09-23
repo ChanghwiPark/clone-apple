@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Iphone13 from './pages/Iphone13';
+import Iphone13Buy from './pages/Iphone13Buy';
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -9,7 +10,8 @@ export default function App() {
             <Routes>
                 <Route path='/' element={<Home />}/>
                 <Route path='/iphone13' element={<Iphone13 />}/>
-                
+                <Route path='/buy-iphone13' element={<Iphone13Buy />}/>
+
                 <Route path='/*' element={<NotFound />}/>
             </Routes>
         </BrowserRouter>

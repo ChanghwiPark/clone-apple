@@ -18,8 +18,7 @@ import SectionLastFooter from "../components/SectionLastFooter";
 
 import { sectionFooterNotesDummy_Iphone13 } from '../components/sectionFooterNotesDummy.js'
 
-
-function Iphone13() {
+export default function Iphone13() {
     const [footerNotesArray, setFooterNotesArray] = useState([])
 
     useEffect(() => {
@@ -57,5 +56,3 @@ function Iphone13() {
         </>
     )
 }
-
-export default Iphone13;

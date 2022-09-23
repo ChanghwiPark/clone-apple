@@ -2,7 +2,7 @@ import "./NavIphone13.css"
 
 function NavIphone13() {
     return(
-        <div className="o-navIphone13">
+        <nav className="o-navIphone13">
             <div className="m-navIphone13__containerMain">
                 <div className="m-navIphone13__containerTitle">
                     <a href="/iphone-13/key-features/">iPhone 13</a>
@@ -20,7 +20,7 @@ function NavIphone13() {
                 </div>
 
                 </div>
-        </div>
+        </nav>
     )
 }
 

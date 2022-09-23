@@ -1,0 +1,56 @@
+
+.m-navIphone13Buy {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    /* transform: translateY(-100%);
+    transition: transform .5s ease-in-out; */
+}
+.m-navIphone13Buy__containerHeaderMain{
+    border-bottom: 1px solid #e8e8ed;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.m-navIphone13Buy__containerHeaderMain a{
+    color: #1d1d1f;
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 600;
+    letter-spacing: .011em;
+}
+.m-navIphone13Buy__containerSpan {
+    display: flex;
+    align-items: center;
+}
+.m-navIphone13Buy__containerHeaderMain span {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -.021em;
+}
+
+.m-navIphone13Buy__containerDescriptionMain {
+    border-bottom: 1px solid #e8e8ed;
+}
+.m-navIphone13Buy__containerDescription {
+    width: 87.5%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    margin: auto;
+}
+.m-blockSpan.-pickUp::before {
+    content: '';
+    width: 1px;
+    height: 19px;
+    background: #d2d2d7;
+    margin-right: 20px;
+}
+.m-navIphone13Buy__containerDescription .m-blockSpan{
+    padding-left: 20px;
+}
+.m-navIphone13Buy__containerDescription .a-blockSpanText {
+    width: auto;
+    margin-left: 4px;
+}

@@ -1,9 +1,9 @@
+import React, { useState, useEffect } from "react";
 import "./SectionRetail.css"
 import BlockH4 from "./BlockH4";
 import BlockP from "./BlockP";
 
 import { carrierDealDummy, takeActionsDummy } from './sectionRetailDummy.js'
-import React, { useState, useEffect } from "react";
 
 export default function SectionRetail() {
     const [carrierDealArray, setCarrierDealArray] = useState([])

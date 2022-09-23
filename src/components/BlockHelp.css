@@ -1,0 +1,24 @@
+
+.m-blockHelp{
+    flex-basis: 328px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    margin: 14px 0 6px;
+}
+
+.m-blockHelp img {
+    width: 120px;
+    height: 132px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.m-blockHelp__containerContent{
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.42859;
+}
+.m-blockHelp__titleContent{
+    font-weight: 600;
+}

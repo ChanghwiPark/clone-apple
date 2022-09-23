@@ -1,0 +1,42 @@
+
+.m-sectionInBox {
+    width: 980px;
+    padding-bottom: 48px;
+    margin: auto;
+}
+.m-sectionInBox h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    padding: 64px 0 41px;
+}
+.m-sectionInBox ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.a-sectionInBox__listImg.-iphone13 {
+    padding-left: 245px;
+    text-align: center;
+}
+.a-sectionInBox__listImg.-cable {
+    padding-right: 245px;
+    text-align: center;
+}
+.a-sectionInBox__captionImg {
+    padding-top: 24px;
+    font-size: 14px;
+    line-height: 1.42859;
+}
+.a-sectionInBox__listImg img {
+    height: 339px;
+}
+
+.m-containerEnvironment {
+    color: #6e6e73;
+    font-size: 14px;
+    line-height: 1.42859;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 0.8em;
+}

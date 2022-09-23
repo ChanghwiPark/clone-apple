@@ -1,0 +1,70 @@
+.m-sectionBuyScrollRight {
+    flex-basis: 328px;
+}
+.m-sectionBuyScrollRight__container.-model {
+    margin: 99.5px 0px 60px;
+}
+.m-sectionBuyScrollRight__containerBlockInput {
+    margin-top: 19px;
+}
+.m-sectionBuyScrollRight__containerHelp {
+    background: #f5f5f7;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 1.42859;
+    padding: 16px;
+    margin: 20px 0 6px;
+}
+.m-sectionBuyScrollRight__containerHelp div:first-child {
+    font-weight: 600;
+}
+
+.m-sectionBuyScrollRight__container.-color {
+    opacity: .32;
+    margin-bottom: 76px
+}
+.m-containerColorSelectionMain {
+    padding-top: 5px;
+    margin-top: 0.8em;
+}
+.a-textColorSelection {
+    font-size: 17px;
+    font-weight: 600;
+}
+.m-listColorSelection {
+    padding: 31px 0 11px;
+    display: inline-block;
+}
+.m-listColorSelection li {
+    margin: 4px 5px 4px 0;
+    float: left;
+}
+.m-sectionBuyScrollRight__container.-color img{
+    width: 32px;
+    height: 32px;
+}
+.a-listItemProductRed {
+    display: flex;
+    align-items: center;
+    padding-right: 76px;
+}
+.a-spanProductRed {
+    background-image: url(https://store.storeimages.cdn-apple.com/4982/store.apple.com/shop/rs-iphone/2/dist/assets/ac-colornav/productred.svg);
+    display: block;
+    width: 70px;
+    height: 21px;
+    margin-left: 6px;
+}
+.m-containerColorDonation {
+    width: 280px;
+    font-size: 12px;
+    line-height: 1.33337;
+    margin-top: 4px;
+}
+
+.m-sectionBuyScrollRight__container.-storage {
+    opacity: .32;
+}
+.m-sectionBuyScrollRight__container.-storage .m-blockHelp {
+    margin-top: 20px;
+}

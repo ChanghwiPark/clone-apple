@@ -1,0 +1,30 @@
+
+.m-ribbonDealDetailed {
+    padding-top: 16px;
+}
+.m-ribbonDealDetailed_containerMain {
+    background-color: #f5f5f7;
+    width: 980px;
+    padding: 14px 0;
+    margin: 0 auto;
+    display: flex;
+}
+.m-ribbonDealDetailed_containerHeader {
+    width: 156px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.m-ribbonDealDetailed_containerHeading {
+    font-size: 14px;
+    line-height: 1.28577;
+    font-weight: 600;
+    letter-spacing: -.016em;
+}
+.m-containerCtaButton.-ribbonDealDetailed {
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 1.42859;
+    letter-spacing: -.016em;
+}
