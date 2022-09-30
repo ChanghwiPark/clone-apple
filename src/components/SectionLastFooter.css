@@ -1,17 +1,17 @@
 .m-sectionLastFooter {
-    margin: 34px 0px 21px;
+    padding: 34px 0px 21px;
 }
 .m-sectionLastFooter__text.-moreShops {
     margin-bottom: 7px;
     padding-bottom: 8px;
     border-bottom: 1px solid #d2d2d7;
 }
-.m-sectionLastFooter__container.-legal {
-    display: flex;
-    position: relative;
+.a-textLastFooter.-localCountry{
+    float: right;
 }
 .a-textLastFooter.-copyright, .m-containerLegalLinks {
-    margin-right: 30px;
+    float: left;
+    margin: 5px 20px 0 0;
 }
 .a-linksLegal {
     border-right: 1px solid #d2d2d7;
@@ -22,8 +22,17 @@
 .a-linksLegal:last-child {
     border: none;
 }
-.a-textLastFooter.-localCountry{
-    position: absolute;
-    top: 0px;
-    right: 0px;
+
+@media only screen and (max-width: 833px){
+    .m-sectionLastFooter__text.-moreShops {
+        border-bottom: none;
+    }
+    .a-textLastFooter.-localCountry {
+        float: none;
+        padding-top: 5px;
+        margin-top: 5px;
+    }
+    .m-sectionLastFooter__container.-legal {
+        padding-top: 12px;
+    }
 }

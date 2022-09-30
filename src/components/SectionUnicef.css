@@ -19,8 +19,7 @@
     font-size: 14px;
 }
 .m-sectionUnicef__linkText::after{
-    content: "";
-    background-image: url("../assets/icons/arrowup1.png");
+    content: "􀰾";
     width: 9.7333px;
     height: 14px;
     margin-left: .3em;

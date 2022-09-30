@@ -11,15 +11,41 @@
 }
 .a-labelSiteMap h3 {
     color: #1d1d1f;
-    margin-bottom: .8em; 
     font-weight: 600;
 }
-.m-containerSiteMap.-account, .m-containerSiteMap.-forEducation, .m-containerSiteMap.-forHealthCare, .m-containerSiteMap.-forHealthcare, .m-containerSiteMap.-forGovernment, .m-containerSiteMap.-aboutApple{
-    padding-top: 24px;
+.m-ulSiteMap {
+    margin-right: 20px;
 }
 .m-ulSiteMap li {
     margin-bottom: .8em;
 }
 .m-ulSiteMap li a {
     color: #424245;
+}
+
+
+@media only screen and (min-width: 834px) {
+    .m-containerSiteMap.-account, .m-containerSiteMap.-forEducation, .m-containerSiteMap.-forHealthCare, .m-containerSiteMap.-forHealthcare, .m-containerSiteMap.-forGovernment, .m-containerSiteMap.-aboutApple{
+        padding-top: 24px;
+    }
+    .a-labelSiteMap h3 {
+        margin-bottom: .8em; 
+    }
+}
+
+@media only screen and (max-width: 833px) {
+    .m-navSiteMap {
+        flex-direction: column;
+    }
+    .m-containerSiteMap {
+        border-bottom: 1px solid rgb(210, 210, 215);
+    }
+    .a-labelSiteMap h3{
+        color: #6e6e73;
+        font-weight: 400;
+        padding: 10px 0;
+    }
+    .m-ulSiteMap {
+        display:none;
+    }
 }

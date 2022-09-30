@@ -27,7 +27,7 @@
     color: #6e6e73;
 }
 .m-containerFooter {
-    width: 980px;
+    max-width: 980px;
     margin: 0px auto;
     padding: 22px;
     font-size: 12px;

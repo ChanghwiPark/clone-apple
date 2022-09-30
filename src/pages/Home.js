@@ -21,8 +21,8 @@ export default function Home() {
 
   return (
     <>
-      <AsideCountry position="-fixed"/>
-      <NavMenu position="-fixed"/>
+      <AsideCountry position="fixed"/>
+      <NavMenu position="fixed"/>
 
       <main class="o-main -home">
         <SectionUnicef/>

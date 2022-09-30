@@ -6,6 +6,27 @@ import SectionBuyScrollRight from './SectionBuyScrollRight'
 import SectionBuyBelow from './SectionBuyBelow'
 
 export default function SectionBuy() {
+
+  const nav = document.querySelector('nav.m-navIphone13Buy')
+
+  window.addEventListener('scroll', function() {
+    let yPosition = window.scrollY
+    console.log("y: " + yPosition)
+
+    if (yPosition>265.5){
+      nav.style.display = "block"
+    } else {
+      nav.style.display = "none"
+    }
+    
+    if (yPosition>363) {
+      nav.style.transform = "none"
+    } else {
+      nav.style.transform = "translateY(-100%)"
+    }
+  })
+
+  
   return (
     <section className='m-sectionBuy'>
       <NavIphone13Buy />
