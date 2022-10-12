@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-export default function NavMenuItem({ className, href='', content, func:showSearchBar }) {
+export default function NavMenuItem({ className, href='', content, func }) {
 
     return (
-        <ANavMenuItem className={className}>
+        <ANavMenuItem className={'a-navMenuItem ' + className}>
             <Link 
+                className={'a-linkNavMenuItem ' + className}
                 to={href}
-                onClick={showSearchBar}
+                onClick={func}
             >{content}</Link>
         </ANavMenuItem>
     )
@@ -21,3 +22,4 @@ const ANavMenuItem = styled.li`
         color: #f5f5f7;
     }
 `
+

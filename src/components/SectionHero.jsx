@@ -1,5 +1,6 @@
-import NavChooseColorItem from "./NavChooseColorItem";
 import "./SectionHero.css"
+import NavChooseColorItem from "./NavChooseColorItem";
+import { Link } from "react-router-dom";
 
 function SectionHero() {
     return(
@@ -9,7 +10,7 @@ function SectionHero() {
                 <h2>Your new superpower.</h2>
                 <p className="m-sectionHero__textParagraphMain">A lightning‑fast chip. A leap in battery life. And all‑new photo and video capabilities. iPhone 13 lets you do things you never could before — in two great sizes.</p>
                 <p className="m-sectionHero__textParagraphSub">From $29.12/mo. for 24 mo. or $699 before trade‑in1*</p>
-                <a  className="a-buttonBuy -sectionHero" href="/us/shop/goto/buy_iphone/iphone_13">Buy</a>
+                <Link className="a-buttonBuy -sectionHero" to="/buy-iphone13">Buy</Link>
             </div>
             <div className="m-sectionHero__containerGraphic -iphone13">
                 <div className="a-containerImageIphone13">

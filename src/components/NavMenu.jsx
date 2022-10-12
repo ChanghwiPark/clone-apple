@@ -1,22 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import NavMenuItem from "./NavMenuItem";
 import BlockSearchBar from "./BlockSearchBar";
 
-import { navMenuDummy } from './navMenuDummy.js'
 import applelogo from "../assets/icons/applelogo.svg";
 import bag from "../assets/icons/bag.svg";
 
 export default function NavMenu({ position }) {
-    const [navMenuArray, setNavMenuArray] = useState([])
     const [searchBar, setSearchBar] = useState(false)
-    
-    useEffect(() => {
-      setNavMenuArray(navMenuDummy)
-    }, [])
 
     const showSearchBar = () => {
-      console.log('set to true')
       setSearchBar(true)
     }
     const cancel = () => {
@@ -38,7 +31,7 @@ export default function NavMenu({ position }) {
             :
             <>
               <ul className="m-navMenu__ul -full">
-                {
+                {/* {
                   navMenuArray ? navMenuArray.map((item) => (
                     <NavMenuItem
                       className={item.className}
@@ -47,7 +40,72 @@ export default function NavMenu({ position }) {
                       func={showSearchBar}
                     />
                   )) : ''
-                }
+                } */}
+                <NavMenuItem
+                  className= '-logoApple'
+                  href='/'
+                  content={<img src={applelogo} alt="Apple Logo" />}
+                />
+                <NavMenuItem
+                  className= '-store'
+                  href='/us/shop/goto/store'
+                  content= 'Store'
+                />
+                <NavMenuItem
+                  className= '-mac'
+                  href='/mac/'
+                  content= 'Mac'
+                />
+                <NavMenuItem
+                  className= '-ipad'
+                  href='/ipad/'
+                  content= 'iPad'
+                />
+                <NavMenuItem
+                  className= '-iphone'
+                  href='/iphone13/'
+                  content= 'iPhone'
+                />
+                <NavMenuItem
+                  className= '-watch'
+                  href='/watch/'
+                  content= 'Watch'
+                />
+                <NavMenuItem
+                  className= '-airpods'
+                  href='/airpods/'
+                  content= 'AirPods'
+                />
+                <NavMenuItem
+                  className= '-tvNHome'
+                  href='/tv-home/'
+                  content= 'TV & Home'
+                />
+                <NavMenuItem
+                  className= '-onlyOnApple'
+                  href='/services/'
+                  content= 'Only on Apple'
+                />
+                <NavMenuItem
+                  className= '-accessories'
+                  href='/us/shop/goto/buy-accessories'
+                  content= 'Accessories'
+                />
+                <NavMenuItem
+                  className= '-support'
+                  href='https://support.apple.com'
+                  content= 'Support'
+                />
+                <NavMenuItem
+                  className= '-iconSearch'
+                  content= {<button className="a-buttonSearchIcon -navMenu" />}
+                  func={showSearchBar}
+                />
+                <NavMenuItem
+                  className= '-iconStore'
+                  href='/us/shop/goto/bag'
+                  content= {<img src={bag} alt="bag icon" />}
+                />
               </ul>
               <ul className="m-navMenu__ul -simplified">
                 <NavMenuItem 
@@ -84,6 +142,7 @@ const ONavMenu = styled.nav`
   background: rgba(0, 0, 0, .8);
   backdrop-filter: saturate(180%) blur(20px);
   width: 100vw;
+  position: relative;
   z-index: 99;
   margin-top: ${props => props.position ? "70px" : "0"};
 

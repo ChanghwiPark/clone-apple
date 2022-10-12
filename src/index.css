@@ -3,6 +3,9 @@
 * {
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif !important;
 }
+html {
+    font-size: 17px;
+}
 h1, h2, h3, h3, h4, h5, h6 {
     color: #111;
     font-weight: 600;

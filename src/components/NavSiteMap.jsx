@@ -14,7 +14,7 @@ function NavSiteMap() {
   return (
     <nav class="m-navSiteMap">
       {
-        navSiteMapArray ? navSiteMapArray.map((column, index) => {
+        navSiteMapArray && navSiteMapArray.map((column, index) => {
           return(
             <div class={"m-columnSiteMap -column0" + index}>
               {
@@ -28,7 +28,7 @@ function NavSiteMap() {
               }
             </div>
           )
-        }) : ''
+        })
       }
     </nav>
   )

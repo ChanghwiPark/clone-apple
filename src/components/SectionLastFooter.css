@@ -9,6 +9,9 @@
 .a-textLastFooter.-localCountry{
     float: right;
 }
+.m-sectionLastFooter__container.-legal{
+    overflow: hidden;
+}
 .a-textLastFooter.-copyright, .m-containerLegalLinks {
     float: left;
     margin: 5px 20px 0 0;

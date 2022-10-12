@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import "./Iphone13.css"
 import AsideCountry from "../components/AsideCountry"
-import NavIphone13 from "../components/NavIphone13";
+import BlockNavBar from "../components/BlockNavBar";
 import NavMenu from "../components/NavMenu";
 import RibbonDeal from "../components/RibbonDeal";
 import SectionHero from "../components/SectionHero";
@@ -30,7 +30,11 @@ export default function Iphone13() {
             <AsideCountry />
             <NavMenu />
 
-            <NavIphone13 />
+            <BlockNavBar 
+                title="iPhone 13"
+                listArray={["Overview", "Switching to iPhone", "Tech Specs"]}
+                cta="Buy"
+            />
 
             <main className="o-main -Iphone13">
                 <RibbonDeal />

@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import './NotFound.css'
 import AsideCountry from '../components/AsideCountry'
 import NavMenu from '../components/NavMenu'
@@ -7,7 +6,6 @@ import NavSiteMap from '../components/NavSiteMap'
 import SectionLastFooter from '../components/SectionLastFooter'
 import ButtonsCta from '../components/ButtonsCta'
 import BlockSearchBar from '../components/BlockSearchBar'
-
 
 export default function NotFound() {
 
