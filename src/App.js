@@ -5,6 +5,7 @@ import Iphone13Buy from './pages/Iphone13Buy';
 import ManageID from './pages/ManageID';
 import SearchResult from './pages/SearchResult';
 import NotFound from './pages/NotFound'
+import Account from './pages/Account';
 
 export default function App() {
     return (
@@ -14,6 +15,7 @@ export default function App() {
                 <Route path='/iphone13' element={<Iphone13 />}/>
                 <Route path='/buy-iphone13' element={<Iphone13Buy />}/>
                 <Route path='/manage-id' element={<ManageID />}/>
+                <Route path='/account' element={<Account/>}/>
                 <Route path='/search*' element={<SearchResult />}/>
 
                 <Route path='/*' element={<NotFound />}/>

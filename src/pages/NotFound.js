@@ -1,6 +1,6 @@
 import './NotFound.css'
-import AsideCountry from '../components/AsideCountry'
 import NavMenu from '../components/NavMenu'
+import BlockPlaceHolder from '../components/BlockPlaceHolder'
 import NavBreadcrumbs from '../components/NavBreadcrumbs'
 import NavSiteMap from '../components/NavSiteMap'
 import SectionLastFooter from '../components/SectionLastFooter'
@@ -11,9 +11,8 @@ export default function NotFound() {
 
   return (
     <>
-      <AsideCountry />
       <NavMenu />
-
+      <BlockPlaceHolder />
       <main className="o-main -notFound">
         <h1 className='a-titleNotFound'>The page your're looking for can't be found.</h1>
         <aside>

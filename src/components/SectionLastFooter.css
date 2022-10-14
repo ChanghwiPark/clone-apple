@@ -6,6 +6,11 @@
     padding-bottom: 8px;
     border-bottom: 1px solid #d2d2d7;
 }
+.m-containerFooter.-manageID .m-sectionLastFooter__text.-moreShops{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
 .a-textLastFooter.-localCountry{
     float: right;
 }

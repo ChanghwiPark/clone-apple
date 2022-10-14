@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import AsideCountry from '../components/AsideCountry'
-import BlockNavBar from '../components/BlockNavBar'
 import NavMenu from '../components/NavMenu'
+import BlockPlaceHolder from '../components/BlockPlaceHolder'
+import BlockNavBar from '../components/BlockNavBar'
 import SectionLastFooter from '../components/SectionLastFooter'
 import BlockID from '../components/BlockID'
 
@@ -15,9 +15,8 @@ import  { ReactComponent as ArrowUpRight } from "../assets/icons/arrowUpRight.sv
 export default function ManageID() {
     return (
         <>
-            <AsideCountry />
             <NavMenu />
-
+            <BlockPlaceHolder />
             <BlockNavBar 
                 title="Apple ID"
                 listArray={["Sign In", "Create Your Apple ID", "FAQ"]}
@@ -192,7 +191,7 @@ const Bottom = styled.div`
     }
 `
 
-const Footer = styled.footer`
+export const Footer = styled.footer`
     .m-sectionLastFooter {
         padding: 17px 0 21px;
     }

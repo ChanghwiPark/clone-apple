@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import './Iphone13Buy.css'
-import AsideCountry from "../components/AsideCountry"
 import NavMenu from "../components/NavMenu";
+import BlockPlaceHolder from "../components/BlockPlaceHolder";
 import RibbonDealDetailed from "../components/RibbonDealDetailed"
 import SectionBuy from "../components/SectionBuy"
 import SectionInBox from "../components/SectionInBox";
@@ -23,8 +23,8 @@ export default function Iphone13Buy() {
 
     return (
         <>
-            <AsideCountry />
             <NavMenu />
+            <BlockPlaceHolder/>
 
             <main className="o-main -Iphone13">
                 <RibbonDealDetailed /> 

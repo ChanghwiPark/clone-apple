@@ -138,12 +138,14 @@ export default function NavMenu({ position }) {
 }
 
 const ONavMenu = styled.nav`
-  position: ${props => props.position || "static"};
+  position: ${props => props.position || "absolute"};
   background: rgba(0, 0, 0, .8);
   backdrop-filter: saturate(180%) blur(20px);
   width: 100vw;
-  position: relative;
-  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
   margin-top: ${props => props.position ? "70px" : "0"};
 
   .m-navMenu{

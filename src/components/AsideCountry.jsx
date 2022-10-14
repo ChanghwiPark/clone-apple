@@ -83,6 +83,7 @@ const AButtonCancel = styled.button`
 
 const OAsideCountry = styled.aside`
 	position: ${props => props.position || "static"};
+  top: 0px;
   z-index: 99;
   background: #424245;
   width: 100vw;

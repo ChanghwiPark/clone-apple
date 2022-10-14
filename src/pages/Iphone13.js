@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
 import "./Iphone13.css"
-import AsideCountry from "../components/AsideCountry"
-import BlockNavBar from "../components/BlockNavBar";
 import NavMenu from "../components/NavMenu";
+import BlockPlaceHolder from "../components/BlockPlaceHolder";
+import BlockNavBar from "../components/BlockNavBar";
 import RibbonDeal from "../components/RibbonDeal";
 import SectionHero from "../components/SectionHero";
 import SectionGridFeatures from "../components/SectionGridFeatures";
@@ -27,9 +27,8 @@ export default function Iphone13() {
 
     return (
         <>
-            <AsideCountry />
             <NavMenu />
-
+            <BlockPlaceHolder />
             <BlockNavBar 
                 title="iPhone 13"
                 listArray={["Overview", "Switching to iPhone", "Tech Specs"]}
